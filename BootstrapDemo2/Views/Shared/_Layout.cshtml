@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>
+                BootstrapDemo:
+                @Html.ActionLink("0a", "Index", "Example0") |
+                @Html.ActionLink("0b", "CodeView", "Example0") |
+                @Html.ActionLink("1a", "Index", "Example1") |
+                @Html.ActionLink("1b", "CodeView", "Example1") |
+                @Html.ActionLink("2a", "Index", "Example2") |
+                @Html.ActionLink("2b", "CodeView", "Example2") |
+                @Html.ActionLink("3a", "Index", "Example3") |
+                @Html.ActionLink("3b", "CodeView", "Example3") |
+                @Html.ActionLink("4a", "Index", "Example4") |
+                @Html.ActionLink("4b", "CodeView", "Example4") |
+                @Html.ActionLink("5a", "Index", "Example5") |
+                @Html.ActionLink("5b", "CodeView", "Example5") |
+                @Html.ActionLink("6a", "Index", "Example6") |
+                @Html.ActionLink("6b", "CodeView", "Example6") |
+                @Html.ActionLink("7a", "Index", "Example7") |
+                @Html.ActionLink("7b", "CodeView", "Example7") |
+                @Html.ActionLink("8a", "Index", "Example8") |
+                @Html.ActionLink("8b", "CodeView", "Example8")
+
+            </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
